@@ -64,4 +64,7 @@
 
     2: Effect Hook ： React.useEffect()
 
+        1: Class component has the component life cycle, but the functional component does not have it.
+        2: 
+
     3: Ref Hook: React.useRef() 
