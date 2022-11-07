@@ -65,6 +65,35 @@
     2: Effect Hook ： React.useEffect()
 
         1: Class component has the component life cycle, but the functional component does not have it.
-        2: 
+        2: useEffect has three parts,
+            useEffect(()=>{
+            
+            },
+            return()
+            
+            ,[])
 
     3: Ref Hook: React.useRef() 
+
+
+
+6: Fragment:
+
+    1: Fragement will minimize the div on DOM, if you need div to wrap many node together, it is better to use fragement
+
+
+7: UseContext:
+    
+    1: UseContext allow you to communicate between component
+    2: we define the useContext then export it 
+    3: useContext.Provider to define exporting values in parent component, if you want to export more value ,it is better to use object type 
+    <useContext.provider value={{name:name,user:user}}></useContext.provider>
+    4: call the React.useContext(UserContext)
+    5: Using Consumer is good way to return value 
+            <UserContext.Consumer>
+                {
+                    value => {
+                        return `my name :${value.name}, my age: ${value.age}`
+                    }
+                }
+            </UserContext.Consumer>

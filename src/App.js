@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 // import Demo from './Components/1_setState/Demo.jsx'
-import Demo from './Components/3_stateHooks/Demo.jsx'
+import Demo from './Components/5_context/Demo.jsx'
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <Demo x={50} />
-      </div>
+      <Fragment>
+        <Demo />
+      </Fragment>
     )
   }
 }
