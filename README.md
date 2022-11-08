@@ -97,3 +97,25 @@
                     }
                 }
             </UserContext.Consumer>
+
+8: Optimize:
+
+    Problem?
+
+    1: Even though the child component did not use anything from parent component, the child component is stil rendered 
+
+    Solution:
+
+    1: When state and props is changed, then render the child component
+
+    2: Use React.memo to wrap the function
+
+9: Render_props:
+
+    1: Two components A and B
+    2: <A><B><A/> structure can not pass value from A to B
+    3: using render props concept to pass from A to B
+
+10: Error boundary:
+
+    
